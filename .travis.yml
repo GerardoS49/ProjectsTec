@@ -2,4 +2,18 @@ language: java
 jdk:
   - openjdk11
 
-script: mvn test
+# Configura las dependencias antes de ejecutar el build
+before_install:
+  - chmod +x gradlew
+
+# Ejecuta el build y las pruebas
+script:
+  - ./gradlew build
+
+# Notificaciones (opcional)
+notifications:
+  email:
+    recipients:
+      - tu_email@example.com
+    on_success: always # Cambia a 'never' si no deseas recibir notificaciones de éxito
+    on_failure: always # Cambia a 'never' si no deseas recibir notificaciones de fallos
