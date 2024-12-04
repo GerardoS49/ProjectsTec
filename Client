@@ -1,3 +1,0 @@
-cd CentroMedicoAvanzado/client
-javac -d bin src/main/java/com/centromedico/client/*.java
-java -cp bin com.centromedico.client.Client
