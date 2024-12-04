@@ -1,0 +1,11 @@
+/bin/
+/build/
+/out/
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.iml
+.idea/
+.DS_Store
